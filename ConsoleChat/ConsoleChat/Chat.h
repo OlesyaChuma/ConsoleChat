@@ -4,6 +4,13 @@ using namespace std;
 #include <string>
 #include "User.h"
 #include "Message.h"
+#include <stdexcept>
+
+class ChatException : public runtime_error {
+public:
+    explicit ChatException(const string& message)
+        : runtime_error(message) {}
+};
 
 // Класс Chat — основной класс управления чатом
 // Реализует меню, регистрацию, вход, отправку и просмотр сообщений
