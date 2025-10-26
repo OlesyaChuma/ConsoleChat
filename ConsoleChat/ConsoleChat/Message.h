@@ -16,5 +16,11 @@ public:
     string getSender() const;
     string getReceiver() const;
     string getText() const;
+
+    // Преобразование в строку для записи в файл               
+    string toString() const;    
+
+    // Восстановление из строки файла
+    static Message fromString(const string& line); // новая функция
 };
 
