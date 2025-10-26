@@ -1,0 +1,143 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\VS_App\\HomeWork\\ConsoleChat\\ConsoleChat\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{08EFD8FB-BD9F-4826-931A-621ADBDC8662}|ConsoleChat\\ConsoleChat.vcxproj|D:\\VS_App\\HomeWork\\ConsoleChat\\ConsoleChat\\ConsoleChat\\ConsoleChat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{08EFD8FB-BD9F-4826-931A-621ADBDC8662}|ConsoleChat\\ConsoleChat.vcxproj|solutionrelative:ConsoleChat\\ConsoleChat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08EFD8FB-BD9F-4826-931A-621ADBDC8662}|ConsoleChat\\ConsoleChat.vcxproj|D:\\VS_App\\HomeWork\\ConsoleChat\\ConsoleChat\\ConsoleChat\\Chat.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{08EFD8FB-BD9F-4826-931A-621ADBDC8662}|ConsoleChat\\ConsoleChat.vcxproj|solutionrelative:ConsoleChat\\Chat.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08EFD8FB-BD9F-4826-931A-621ADBDC8662}|ConsoleChat\\ConsoleChat.vcxproj|D:\\VS_App\\HomeWork\\ConsoleChat\\ConsoleChat\\ConsoleChat\\Message.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{08EFD8FB-BD9F-4826-931A-621ADBDC8662}|ConsoleChat\\ConsoleChat.vcxproj|solutionrelative:ConsoleChat\\Message.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08EFD8FB-BD9F-4826-931A-621ADBDC8662}|ConsoleChat\\ConsoleChat.vcxproj|D:\\VS_App\\HomeWork\\ConsoleChat\\ConsoleChat\\ConsoleChat\\User.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{08EFD8FB-BD9F-4826-931A-621ADBDC8662}|ConsoleChat\\ConsoleChat.vcxproj|solutionrelative:ConsoleChat\\User.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08EFD8FB-BD9F-4826-931A-621ADBDC8662}|ConsoleChat\\ConsoleChat.vcxproj|D:\\VS_App\\HomeWork\\ConsoleChat\\ConsoleChat\\ConsoleChat\\Message.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{08EFD8FB-BD9F-4826-931A-621ADBDC8662}|ConsoleChat\\ConsoleChat.vcxproj|solutionrelative:ConsoleChat\\Message.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08EFD8FB-BD9F-4826-931A-621ADBDC8662}|ConsoleChat\\ConsoleChat.vcxproj|D:\\VS_App\\HomeWork\\ConsoleChat\\ConsoleChat\\ConsoleChat\\Chat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{08EFD8FB-BD9F-4826-931A-621ADBDC8662}|ConsoleChat\\ConsoleChat.vcxproj|solutionrelative:ConsoleChat\\Chat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08EFD8FB-BD9F-4826-931A-621ADBDC8662}|ConsoleChat\\ConsoleChat.vcxproj|D:\\VS_App\\HomeWork\\ConsoleChat\\ConsoleChat\\ConsoleChat\\User.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{08EFD8FB-BD9F-4826-931A-621ADBDC8662}|ConsoleChat\\ConsoleChat.vcxproj|solutionrelative:ConsoleChat\\User.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Chat.cpp",
+              "DocumentMoniker": "D:\\VS_App\\HomeWork\\ConsoleChat\\ConsoleChat\\ConsoleChat\\Chat.cpp",
+              "RelativeDocumentMoniker": "ConsoleChat\\Chat.cpp",
+              "ToolTip": "D:\\VS_App\\HomeWork\\ConsoleChat\\ConsoleChat\\ConsoleChat\\Chat.cpp",
+              "RelativeToolTip": "ConsoleChat\\Chat.cpp",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAgwHQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-25T17:45:30.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Chat.h",
+              "DocumentMoniker": "D:\\VS_App\\HomeWork\\ConsoleChat\\ConsoleChat\\ConsoleChat\\Chat.h",
+              "RelativeDocumentMoniker": "ConsoleChat\\Chat.h",
+              "ToolTip": "D:\\VS_App\\HomeWork\\ConsoleChat\\ConsoleChat\\ConsoleChat\\Chat.h",
+              "RelativeToolTip": "ConsoleChat\\Chat.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-25T17:44:34.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Message.cpp",
+              "DocumentMoniker": "D:\\VS_App\\HomeWork\\ConsoleChat\\ConsoleChat\\ConsoleChat\\Message.cpp",
+              "RelativeDocumentMoniker": "ConsoleChat\\Message.cpp",
+              "ToolTip": "D:\\VS_App\\HomeWork\\ConsoleChat\\ConsoleChat\\ConsoleChat\\Message.cpp",
+              "RelativeToolTip": "ConsoleChat\\Message.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-25T17:43:27.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Message.h",
+              "DocumentMoniker": "D:\\VS_App\\HomeWork\\ConsoleChat\\ConsoleChat\\ConsoleChat\\Message.h",
+              "RelativeDocumentMoniker": "ConsoleChat\\Message.h",
+              "ToolTip": "D:\\VS_App\\HomeWork\\ConsoleChat\\ConsoleChat\\ConsoleChat\\Message.h",
+              "RelativeToolTip": "ConsoleChat\\Message.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-25T17:42:12.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cpp",
+              "DocumentMoniker": "D:\\VS_App\\HomeWork\\ConsoleChat\\ConsoleChat\\ConsoleChat\\User.cpp",
+              "RelativeDocumentMoniker": "ConsoleChat\\User.cpp",
+              "ToolTip": "D:\\VS_App\\HomeWork\\ConsoleChat\\ConsoleChat\\ConsoleChat\\User.cpp",
+              "RelativeToolTip": "ConsoleChat\\User.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-25T17:05:03.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.h",
+              "DocumentMoniker": "D:\\VS_App\\HomeWork\\ConsoleChat\\ConsoleChat\\ConsoleChat\\User.h",
+              "RelativeDocumentMoniker": "ConsoleChat\\User.h",
+              "ToolTip": "D:\\VS_App\\HomeWork\\ConsoleChat\\ConsoleChat\\ConsoleChat\\User.h",
+              "RelativeToolTip": "ConsoleChat\\User.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-25T17:03:15.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConsoleChat.cpp",
+              "DocumentMoniker": "D:\\VS_App\\HomeWork\\ConsoleChat\\ConsoleChat\\ConsoleChat\\ConsoleChat.cpp",
+              "RelativeDocumentMoniker": "ConsoleChat\\ConsoleChat.cpp",
+              "ToolTip": "D:\\VS_App\\HomeWork\\ConsoleChat\\ConsoleChat\\ConsoleChat\\ConsoleChat.cpp*",
+              "RelativeToolTip": "ConsoleChat\\ConsoleChat.cpp*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-25T17:01:05.048Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
