@@ -1,6 +1,10 @@
 ﻿#pragma once
 
 #include <string>
+#include <chrono>
+#include <ctime>
+#include <iomanip>
+#include <sstream>
 
 using namespace std;
 
@@ -12,17 +16,19 @@ private:
     string sender;      // Отправитель
     string receiver;    // Получатель ("all" — всем)
     string text;        // Текст сообщения
+    string timestamp;   // время отправки
+
 public:
-    Message(const string& sender, const string& receiver, const string& text);
+    Message() = default;
+    Message(const string& s, const string& r, const string& t);
+
     // Геттеры
-    string getSender() const;
-    string getReceiver() const;
-    string getText() const;
+    const string getSender() const;
+    const string getReceiver() const;
+    const string getText() const;
+    const string& getTimestamp() const;
 
     // Преобразование в строку для записи в файл               
     string toString() const;    
-
-    // Восстановление из строки файла
-    static Message fromString(const string& line); // новая функция
 };
 

@@ -108,20 +108,23 @@ void Chat::showMessages() {
             throw ChatException("Вы не вошли в систему!");
 
         cout << "\n=====================================\n";
-        cout << " Сообщения пользователя: " << currentUser->getName() << "\n";
+        cout << " Сообщения для пользователя: " << currentUser->getName() << "\n";
         cout << "=====================================\n";
 
-        bool found = false;
-        const vector<Message>& allMsgs = messages.getAll();
-        for (const auto& msg : allMsgs) {
+        bool hasMessages = false;
+        for (const auto& msg : messages.getAll()) {
+            // Показываем сообщения, адресованные текущему пользователю или всем
             if (msg.getReceiver() == "all" || msg.getReceiver() == currentUser->getLogin()) {
-                cout << "[" << msg.getSender() << "] -> "
-                    << (msg.getReceiver() == "all" ? "всем" : msg.getReceiver())
-                    << ": " << msg.getText() << "\n";
+                cout << msg.toString() << "\n";  // теперь с временем
+                hasMessages = true;
             }
         }
-        if (!found)
+
+        if (!hasMessages) {
             cout << "Нет новых сообщений.\n";
+        }
+
+        cout << "-------------------------------------\n";
     }
     catch (const ChatException& e) {
         cerr << "Ошибка: " << e.what() << "\n";
@@ -138,7 +141,11 @@ void Chat::start() {
                 cout << "=====================================\n";
                 cout << "1. Регистрация\n2. Вход\n3. Выход\nВыбор: ";
                 if (!(cin >> choice))
-                    throw ChatException("Некорректный ввод! Введите число.");
+                {
+                    cin.clear(); // сбрасываем флаг ошибки
+                    cin.ignore(numeric_limits<streamsize>::max(), '\n'); // очищаем ввод до конца строки
+                    throw ChatException("Некорректный ввод! Введите число от 1 до 3.");
+                }
 
                 switch (choice) {
                 case 1: registerUser(); break;
@@ -153,7 +160,11 @@ void Chat::start() {
                 cout << "=====================================\n";
                 cout << "1. Отправить сообщение\n2. Просмотреть сообщения\n3. Выйти из аккаунта\nВыбор: ";
                 if (!(cin >> choice))
-                    throw ChatException("Некорректный ввод! Введите число.");
+                {
+                    cin.clear(); // сбрасываем флаг ошибки
+                    cin.ignore(numeric_limits<streamsize>::max(), '\n'); // очищаем ввод до конца строки
+                    throw ChatException("Некорректный ввод! Введите число от 1 до 3.");
+                }
 
                 switch (choice) {
                 case 1: sendMessage(); break;

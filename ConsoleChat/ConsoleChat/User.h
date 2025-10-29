@@ -19,8 +19,4 @@ public:
     string getName() const;
     // Проверка правильности пароля
     bool checkPassword(const string& pass) const;
-    // Преобразование в строку для записи в файл
-    string toString() const;  
-    // Создание объекта из строки файла
-    static User fromString(const string& line); 
 };
