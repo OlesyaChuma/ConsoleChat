@@ -132,6 +132,7 @@
     <ClInclude Include="Chat.h" />
     <ClInclude Include="ChatException.h" />
     <ClInclude Include="Message.h" />
+    <ClInclude Include="Storage.h" />
     <ClInclude Include="User.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
