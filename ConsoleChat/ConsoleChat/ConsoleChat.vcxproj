@@ -130,6 +130,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Chat.h" />
+    <ClInclude Include="ChatException.h" />
     <ClInclude Include="Message.h" />
     <ClInclude Include="User.h" />
   </ItemGroup>

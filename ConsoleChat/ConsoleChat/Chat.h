@@ -5,14 +5,9 @@ using namespace std;
 #include "User.h"
 #include "Message.h"
 #include <stdexcept>
+#include "ChatException.h"
 
-class ChatException : public runtime_error {
-public:
-    explicit ChatException(const string& message)
-        : runtime_error(message) {}
-};
-
-// Класс Chat — основной класс управления чатом
+// Класс Chat управляет пользователями и обменом сообщениями
 // Реализует меню, регистрацию, вход, отправку и просмотр сообщений
 
 class Chat {
@@ -21,20 +16,10 @@ private:
     vector<Message> messages;       // Хранилище сообщений
     User* currentUser = nullptr;    // Текущий пользователь
 
-    const string usersFile = "users.txt";
-    const string messagesFile = "messages.txt";
-
     // Поиск пользователя по логину
     User* findUserByLogin(const string& login);
 
-    void saveUsers();               // Сохраняет всех зарегистрированных пользователей в файл
-    void loadUsers();               // Загружает пользователей из файла при запуске программы
-    void saveMessages();            // Сохраняет все сообщения в файл
-    void loadMessages();            // Загружает историю сообщений из файла
-
 public:
-    Chat();                         // Загружает данные при запуске
-    ~Chat();                        // Cохранение при завершении
     void start();                   // Основное меню программы
     void registerUser();            // Регистрация нового пользователя
     void loginUser();               // Авторизация
