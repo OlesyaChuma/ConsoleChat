@@ -1,5 +1,7 @@
 ﻿#pragma once
+
 #include <string>
+
 using namespace std;
 
 // Класс User представляет пользователя чата

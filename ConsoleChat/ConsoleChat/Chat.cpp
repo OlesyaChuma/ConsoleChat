@@ -1,16 +1,25 @@
 ﻿#include "Chat.h"
 #include <iostream>
-#include <fstream>
 #include <limits>   // для очистки потока ввода
+
 using namespace std;
 
 // Поиск пользователя по логину
 User* Chat::findUserByLogin(const string& login) {
-    for (auto& user : users) {
+    const vector<User>& allUsers = users.getAll();
+    for (auto& user : allUsers) {
         if (user.getLogin() == login)
-            return &user;
+            return &const_cast<User&>(user);
     }
     return nullptr;
+}
+
+Chat::Chat()
+{
+}
+
+Chat::~Chat()
+{
 }
 
 // Регистрация нового пользователя
@@ -28,7 +37,7 @@ void Chat::registerUser() {
         cout << "Введите имя: ";
         cin >> name;
 
-        users.emplace_back(login, password, name);
+        users.add(User(login, password, name));
         cout << "Регистрация успешна!\n";
     }
     catch (const ChatException& e) {
@@ -81,7 +90,10 @@ void Chat::sendMessage() {
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         getline(cin, text);
 
-        messages.emplace_back(currentUser->getLogin(), receiver, text);
+        if (text.empty())
+            throw ChatException("Сообщение не может быть пустым!");
+
+        messages.add(Message(currentUser->getLogin(), receiver, text));
         cout << "Сообщение отправлено!\n";
     }
     catch (const ChatException& e) {
@@ -100,12 +112,12 @@ void Chat::showMessages() {
         cout << "=====================================\n";
 
         bool found = false;
-        for (const auto& msg : messages) {
+        const vector<Message>& allMsgs = messages.getAll();
+        for (const auto& msg : allMsgs) {
             if (msg.getReceiver() == "all" || msg.getReceiver() == currentUser->getLogin()) {
                 cout << "[" << msg.getSender() << "] -> "
                     << (msg.getReceiver() == "all" ? "всем" : msg.getReceiver())
                     << ": " << msg.getText() << "\n";
-                found = true;
             }
         }
         if (!found)

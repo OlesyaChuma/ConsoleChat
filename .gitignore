@@ -1,0 +1,35 @@
+# Visual Studio
+.vs/
+*.vcxproj.user
+*.VC.db
+*.suo
+*.pdb
+*.idb
+*.obj
+*.tlog
+*.log
+*.ipch/
+*.lastbuildstate
+*.ilk
+
+# Build output
+x64/
+Debug/
+Release/
+
+# User-specific files
+*.user
+*.cache
+*.tmp
+*.aps
+*.res
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+
+# Others
+*.exe
+*.dll
+*.manifest
+*.db
