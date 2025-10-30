@@ -14,9 +14,9 @@ using namespace std;
 
 class Chat {
 private:
-    Storage<User> users;             // Хранилище пользователей
-    Storage<Message> messages;       // Хранилище сообщений
-    User* currentUser = nullptr;    // Текущий пользователь
+    Storage<User> users;                // Хранилище пользователей
+    Storage<Message> messages;          // Хранилище сообщений
+    User* currentUser = nullptr;        // Текущий пользователь
 
     // Поиск пользователя по логину
     User* findUserByLogin(const string& login);

@@ -1,6 +1,6 @@
 ﻿#include "Chat.h"
 #include <iostream>
-#include <limits>   // для очистки потока ввода
+#include <limits>       // для очистки потока ввода
 
 using namespace std;
 
@@ -131,6 +131,7 @@ void Chat::showMessages() {
     }
 }
 
+// Основное меню программы
 void Chat::start() {
     int choice;
     while (true) {
@@ -142,7 +143,7 @@ void Chat::start() {
                 cout << "1. Регистрация\n2. Вход\n3. Выход\nВыбор: ";
                 if (!(cin >> choice))
                 {
-                    cin.clear(); // сбрасываем флаг ошибки
+                    cin.clear(); // сбрасываем флаг ошибки (чтобы не падать в бесконечный цикл)
                     cin.ignore(numeric_limits<streamsize>::max(), '\n'); // очищаем ввод до конца строки
                     throw ChatException("Некорректный ввод! Введите число от 1 до 3.");
                 }
@@ -161,7 +162,7 @@ void Chat::start() {
                 cout << "1. Отправить сообщение\n2. Просмотреть сообщения\n3. Выйти из аккаунта\nВыбор: ";
                 if (!(cin >> choice))
                 {
-                    cin.clear(); // сбрасываем флаг ошибки
+                    cin.clear(); // сбрасываем флаг ошибки (чтобы не падать в бесконечный цикл)
                     cin.ignore(numeric_limits<streamsize>::max(), '\n'); // очищаем ввод до конца строки
                     throw ChatException("Некорректный ввод! Введите число от 1 до 3.");
                 }
